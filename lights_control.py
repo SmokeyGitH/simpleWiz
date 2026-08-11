@@ -43,7 +43,7 @@ def update_light(selected_bulb_label, power, color, preset, brightness):
 
         # Apply Preset or Color
         if preset != "None":
-            temp_map = {"Warm (3000K)": 2700, "Neutral (4000K)": 4000, "Cold (6500K)": 6500}
+            temp_map = {"Warm (2700K)": 2700, "Neutral (4000K)": 4000, "Cold (6500K)": 6500}
             pilot_args["colortemp"] = temp_map[preset]
         elif color:
             # Color picker returns hex string "#RRGGBB"
